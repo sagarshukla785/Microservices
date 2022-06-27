@@ -1,5 +1,6 @@
 package com.example.Microservices.MyServices;
 
+import com.example.Microservices.Exceptions.MyExceptions;
 import com.example.Microservices.MyRepository.MyRepository;
 import com.example.Microservices.dto.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,8 @@ public class MyServices {
     }
 
     public User getU(int id){
-        return myRepository.findById(id).get();
+            return myRepository.findById(id).get();
+
     }
 
 }
