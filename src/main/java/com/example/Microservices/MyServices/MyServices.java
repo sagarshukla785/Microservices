@@ -18,8 +18,7 @@ public class MyServices {
     }
 
     public User getU(int id){
-            return myRepository.findById(id).get();
-
+        return myRepository.findById(id).get();
     }
 
 }
